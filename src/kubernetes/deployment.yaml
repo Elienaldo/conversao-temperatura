@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: elipod
+spec:
+  containers:
+    - name: web
+      image: elienaldo/conversao-temperatura:v2
+      ports:
+        - containerPort: 80
